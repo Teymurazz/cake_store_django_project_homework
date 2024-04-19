@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tort.name }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'cakes/main.css' %}">
+</head>
+<body>
+    <div class="container" style="display: flex;">
+        <img src="{{ tort.image_url }}" width="300px">
+        <table>
+            <tr>
+              <th>Tortun adi</th>
+              <th>{{ tort.name }}</th>
+              
+            </tr>
+            <tr>
+              <td>Chekisi</td>
+              <td>{{ tort.weight }}</td>
+              
+            </tr>
+            <tr>
+              <td>Terkibi</td>
+              <td>{{ tort.ingredients }}</td>
+              
+            </tr>
+            <tr>
+              <td>İstehsal tarixi</td>
+              <td>{{ tort.baked_at }}</td>
+              
+            </tr>
+          </table>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

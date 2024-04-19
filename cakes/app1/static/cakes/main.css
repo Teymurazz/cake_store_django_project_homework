@@ -1,0 +1,49 @@
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://pibig.info/uploads/posts/2022-11/1669687114_11-pibig-info-p-kremovii-fon-vkontakte-11.jpg'); /* замените 'path/to/your/image.jpg' на путь к вашему изображению фона */
+    background-size: cover; /* установите размер изображения фона так, чтобы оно покрывало всю доступную область */
+    background-repeat: no-repeat; /* установите, чтобы изображение фона не повторялось */
+}
+
+
+.product-card {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e60f0f;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(40, 216, 24, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 20px;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 18px;
+    color: rgb(10, 10, 10);
+    margin-bottom: 10px;
+}
+
+.product-baked {
+    font-size: 14px;
+    color: #080808;
+}
